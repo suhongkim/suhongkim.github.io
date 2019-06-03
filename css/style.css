@@ -92,6 +92,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
   height: 600px;
   width: 100%;
+  transform: scale(1.1);
 }
 #fh5co-header .overlay,
 .fh5co-cover .overlay {
