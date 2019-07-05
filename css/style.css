@@ -239,7 +239,8 @@ fh5co-about .profile-thumb {
 }
 
 #fh5co-features {
-  background: #FF9000;
+  /* background: #FF9000; */
+  background: rgb(116, 97, 113);
 }
 #fh5co-features h2 {
   color: #fff;
@@ -274,7 +275,8 @@ fh5co-about .profile-thumb {
   display: table-cell;
   vertical-align: middle;
   height: 100px;
-  color: #FF9000 !important;
+  /* color: #FF9000 !important; */
+  color:  rgb(116, 97, 113) !important; 
 }
 #fh5co-features .feature-left .feature-copy {
   width: 100%;
@@ -325,7 +327,7 @@ fh5co-about .profile-thumb {
 
 .fh5co-bg-dark {
   background: #2F3C4F;
-  background: #FF9000;
+  /* background: #FF9000; */
 }
 .fh5co-bg-dark .fh5co-heading h2 {
   color: #fff !important;
@@ -550,7 +552,8 @@ fh5co-about .profile-thumb {
   top: 40px;
   left: 50%;
   margin-left: -21px;
-  background-color: #FF9000;
+  /* background-color: #FF9000; */
+  background-color: rgb(116, 97, 113);
   z-index: 100;
   display: table;
   -webkit-border-radius: 50%;
