@@ -47,13 +47,13 @@ body {
 }
 
 a {
-  color: #FF9000;
+  color: rgb(116, 97, 113);
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #FF9000;
+  color: rgb(116, 97, 113);
   outline: none;
   text-decoration: none;
 }
@@ -71,17 +71,17 @@ h1, h2, h3, h4, h5, h6, figure {
 
 ::-webkit-selection {
   color: #fff;
-  background: #FF9000;
+  background: rgb(116, 97, 113);
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #FF9000;
+  background: rgb(116, 97, 113);
 }
 
 ::selection {
   color: #fff;
-  background: #FF9000;
+  background: rgb(116, 97, 113);
 }
 
 #fh5co-header,
@@ -326,7 +326,7 @@ fh5co-about .profile-thumb {
 }
 
 .fh5co-bg-dark {
-  background: #2F3C4F;
+  background: rgb(116, 97, 113);
   /* background: #FF9000; */
 }
 .fh5co-bg-dark .fh5co-heading h2 {
@@ -385,7 +385,7 @@ fh5co-about .profile-thumb {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #FF9000;
+  color: rgb(116, 97, 113);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -422,7 +422,7 @@ fh5co-about .profile-thumb {
   font-size: 20px;
 }
 #fh5co-about .fh5co-social-icons li a:hover {
-  background: #FF9000;
+  background: rgb(116, 97, 113);
 }
 
 .fh5co-heading {
@@ -822,7 +822,7 @@ fh5co-about .profile-thumb {
   height: 54px;
   border: none !important;
   background: #fff;
-  color: #FF9000;
+  color: rgb(116, 97, 113);
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
@@ -1132,21 +1132,23 @@ input[type="text"] {
 }
 
 .btn-primary {
-  background: #FF9000;
+  background: rgb(116, 97, 113);
   color: #fff;
-  border: 2px solid #FF9000;
+  border: 2px solid rgb(116, 97, 113);
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #ff9b1a !important;
-  border-color: #ff9b1a !important;
+  /* background: #ff9b1a !important;
+  border-color: #ff9b1a !important; */
+  background: rgb(116, 97, 113) !important;
+  border-color: rgb(116, 97, 113) !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #FF9000;
-  border: 2px solid #FF9000;
+  color: rgb(116, 97, 113);
+  border: 2px solid rgb(116, 97, 113);
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #FF9000;
+  background: rgb(116, 97, 113);
   color: #fff;
 }
 
@@ -1276,7 +1278,7 @@ input[type="text"] {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #FF9000;
+  border-color: rgb(116, 97, 113);
 }
 
 .row-pb-md {
