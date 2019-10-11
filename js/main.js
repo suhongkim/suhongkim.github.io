@@ -148,26 +148,29 @@
 
 }());
 
-// function readMore() {
-// 	var x = document.getElementById("myDIV");
-// 	if (x.style.display === "none") {
-// 	  x.style.display = "block";
-// 	} else {
-// 	  x.style.display = "none";
-// 	}
-//   } 
 
-  function readMore() {
-	var moreText = document.getElementById("readmore-hidden");
-	var btnText = document.getElementById("readmore");
+  function readMore(id) {
+	var moreText = document.getElementById("readmore-hidden-" + id);
+	var btnText = document.getElementById("readmore-" + id);
+	var btnText2 = document.getElementById("readless-" + id);
   
-	if (btnText.style.display === "none") {
-	  btnText.style.display = "inline";
-	  btnText.innerHTML = "Read more";
-	  moreText.style.display = "none";
+	if (moreText.style.display === "none") {
+		btnText.style.display = "none";
+		moreText.style.display = "inline";
+		btnText2.style.display = "inline";
 	} else {
-	  dots.style.display = "none";
-	  btnText.innerHTML = "Read less";
-	  moreText.style.display = "inline";
+		btnText.style.display = "inline";
+		moreText.style.display = "none";
+		btnText2.style.display = "none";
 	}
   } 
+
+
+//overlay
+function overlayOn() {
+	document.getElementById("overlay").style.display = "block";
+  }
+  
+  function overlayOff() {
+	document.getElementById("overlay").style.display = "none";
+  }
