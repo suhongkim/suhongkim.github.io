@@ -167,10 +167,10 @@
 
 
 //overlay
-function overlayOn() {
-	document.getElementById("overlay").style.display = "block";
+function overlayOn(id) {
+	document.getElementById(id).style.display = "block";
   }
   
-  function overlayOff() {
-	document.getElementById("overlay").style.display = "none";
+  function overlayOff(id) {
+	document.getElementById(id).style.display = "none";
   }

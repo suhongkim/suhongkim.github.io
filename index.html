@@ -85,14 +85,7 @@
 		</div>
 	</header> 
 
-	<!-- The social media icon bar -->
-	<div class="icon-bar" id="icon-bar">
-			<a href="#fh5co-header" class="facebook">Home<i class="fa fa-facebook"></i></a>
-			<a href="#fh5co-resume" class="twitter">Resume<i class="fa fa-twitter"></i></a>
-			<a href="#fh5co-features" class="google">Skills<i class="fa fa-google"></i></a>
-			<a href="#fh5co-work" class="linkedin">Projects<i class="fa fa-linkedin"></i></a>
-			<a href="#fh5co-blog" class="youtube">Write-up<i class="fa fa-youtube"></i></a>
-		  </div>
+
 
 
 	<!-- <div id="fh5co-about" class="animate-box">
@@ -319,7 +312,69 @@
 		</div>
 	</div>
 
-	<div id="fh5co-work" class="fh5co-bg-color">
+	<!-- Overlay-->
+	<div id="overlay-csg-poster" class="overlay" onclick="overlayOff('overlay-csg-poster')">
+		<embed type="application/pdf" src="./posts/childrenStoriesGenerator_post.pdf" width="80%" height="80%" overflow="visible"> 
+	</div>
+	<div id="overlay-csg-report" class="overlay" onclick="overlayOff('overlay-csg-report')">
+		<embed type="application/pdf" src="./posts/childrenStoriesGenerator_report.pdf" width="80%" height="80%" overflow="visible"> 
+	</div>
+	<div id="overlay-rr-poster" class="overlay" onclick="overlayOff('overlay-rr-poster')">
+		<embed type="application/pdf" src="./posts/reflectionRemoval_post.pdf" width="80%" height="80%" overflow="visible"> 
+	</div>
+	<div id="overlay-rr-report" class="overlay" onclick="overlayOff('overlay-rr-report')">
+		<embed type="application/pdf" src="./posts/reflectionRemoval_report.pdf" width="80%" height="80%" overflow="visible"> 
+	</div>
+	<!-- /Overlay-->
+
+	<div id="fh5co-blog" class="fh5co-bg-color">
+		<div class="container">
+			<div class="row animate-box">
+				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
+					<h2>Presentations</h2>
+					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a onclick="overlayOn('overlay-rr-poster')" class="blog-bg" style="background-image: url(posts/reflectionRemoval_post.png);"></a>
+						<div class="blog-text">
+							<span class="posted_on">Oct. 1th 2019</span>
+							<h3><a onclick="overlayOn('overlay-rr-poster')">Video Reflection Removal</a></h3>
+							<p>Videos are often taken behind a reflective surface causing undesired reflections to exist. We design an algorithm to separate reflection from the background</p>
+							<a onclick="overlayOn('overlay-rr-poster')">SFU CS Research Day Poster <i class="icon-document"></i></a>
+							<a onclick="overlayOn('overlay-rr-report')">Co-op Technical Report <i class="icon-document"></i></a>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a onclick="overlayOn('overlay-csg-poster')" class="blog-bg" style="background-image: url(posts/childrenStoriesGenerator_post-1.png);"></a>
+						<div class="blog-text">
+							<span class="posted_on">Dec. 8th 2018</span>
+							<h3><a onclick="overlayOn('overlay-csg-poster')">Children Stories Generator from Hand Drawings</a></h3>
+							<p>Children sometimes express their feelings and thoughts through their drawings. It would be awesome if we can capture their drawings and interpret their own stories. For this purpose, we suggest the children stories generator from hand drawings using the convolutional neural network (CNN) and recurrent neural network (RNN).</p>
+							<a onclick="overlayOn('overlay-csg-poster')">SFU AI Poster Session <i class="icon-document"></i></a>
+							<a onclick="overlayOn('overlay-csg-report')">Project Report <i class="icon-document"></i></a>
+						</div> 
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="fh5co-blog animate-box">
+						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-3.jpg);"></a>
+						<div class="blog-text">
+							<span class="posted_on">Dec. 6th 2019</span>
+							<h3><a href="#">Working on the NLP project</a></h3>
+							<p></p>
+						</div> 
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="fh5co-work" class="fh5co-bg-dark">
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
@@ -395,66 +450,6 @@
 		</div>
 	</div>
 
-	<!-- Overlay-->
-	<div id="overlay" onclick="overlayOff()">
-		{% comment %} <div class="moduleItemImage" style="background-image: url(images/background.png);> {% endcomment %}
-		<div class"moduleItemImage">
-		<img src="https://suhongkim.github.io/posts/childrenStoriesGenerator.png">
-		</div>
-	</div>
-	<!-- /Overlay-->
-
-	<div id="fh5co-blog" class="fh5co-bg-dark">
-		<div class="container">
-			<div class="row animate-box">
-				<div class="col-md-8 col-md-offset-2 text-center fh5co-heading">
-					<h2>Presentations</h2>
-					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<div onclick="overlayOn()" class="blog-bg" style="background-image: url(posts/childrenStoriesGenerator_post-1.png);"></div>
-						<div class="blog-text">
-							<span class="posted_on">Dec. 8th 2018</span>
-							<h3><a href="#">Children Stories Generator from Hand Drawings</a></h3>
-							<p>Children sometimes express their feelings and thoughts through their drawings. It would be awesome if we can capture their drawings and interpret their own stories. For this purpose, we suggest the children stories generator from hand drawings using the convolutional neural network (CNN) and recurrent neural network (RNN).</p>
-							<a href="https://github.com/suhongkim/posts/childrenStoriesGenerator_report.pdf">Report<i class="icon-arrow-right22"></i></a>
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-2.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Mar. 15th 2016</span>
-							<h3><a href="#">Surfing at Philippines</a></h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<a href="url(posts/portfolio-2.jpg)">Read More<i class="icon-arrow-right22"></i></a>
-
-						</div> 
-					</div>
-				</div>
-				<div class="col-md-4">
-					<div class="fh5co-blog animate-box">
-						<a href="#" class="blog-bg" style="background-image: url(images/portfolio-3.jpg);"></a>
-						<div class="blog-text">
-							<span class="posted_on">Mar. 15th 2016</span>
-							<h3><a href="#">Capture Living On Uderwater</a></h3>
-							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-							<ul class="stuff">
-								<li><i class="icon-heart2"></i>249</li>
-								<li><i class="icon-eye2"></i>308</li>
-								<li><a href="#">Read More<i class="icon-arrow-right22"></i></a></li>
-							</ul>
-						</div> 
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
 	<div id="fh5co-footer">
 		<div class="container">
 			<div class="row">
@@ -464,6 +459,15 @@
 			</div>
 		</div>
 	</div>
+
+	<!-- The social media icon bar -->
+	<div class="icon-bar" id="icon-bar">
+			<a href="#fh5co-header" class="facebook">Home<i class="fa fa-facebook"></i></a>
+			<a href="#fh5co-resume" class="twitter">Resume<i class="fa fa-twitter"></i></a>
+			<a href="#fh5co-features" class="google">Skills<i class="fa fa-google"></i></a>
+			<a href="#fh5co-blog" class="linkedin">Presentations<i class="fa fa-linkedin"></i></a>
+			<a href="#fh5co-work" class="youtube">Projects<i class="fa fa-youtube"></i></a>
+		  </div>
 
 	<div class="gototop js-top">
 		<a href="#" class="js-gotop"><i class="icon-arrow-up22"></i></a>
@@ -482,8 +486,8 @@
 	<!-- Easy PieChart -->
 	<script src="js/jquery.easypiechart.min.js"></script>
 	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script>
-	<script src="js/google_map.js"></script>
+	{% comment %} <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCefOgb1ZWqYtj7raVSmN4PL2WkTrc-KyA&sensor=false"></script> {% endcomment %}
+	{% comment %} <script src="js/google_map.js"></script> {% endcomment %}
 	
 	<!-- Main -->
 	<script src="js/main.js"></script>
