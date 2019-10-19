@@ -1374,7 +1374,7 @@ input[type="text"] {
     height: auto;
     position: fixed;
   }
-  .icon-bar a {float: none; font-size: 10px;}
+  .icon-bar a {float: left; font-size: 10px;}
   /* div.content {margin-left: 0;} */
 }
 
