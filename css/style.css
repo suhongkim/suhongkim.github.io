@@ -1369,10 +1369,11 @@ input[type="text"] {
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 480) {
   .icon-bar {
-    top: 2%; 
+    /* top: 2%; 
     width: 100%;
-    height: auto;
-    position: fixed;
+    height: auto; */
+    /* position: fixed; */
+    float:none;
   }
   .icon-bar a {float: none; font-size: 10px;}
   /* div.content {margin-left: 0;} */
