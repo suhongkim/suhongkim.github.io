@@ -1366,8 +1366,20 @@ input[type="text"] {
   /* div.content {margin-left: 0;} */
 }
 
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 480) {
+  .icon-bar {
+    top: 2%; 
+    width: 100%;
+    height: auto;
+    position: fixed;
+  }
+  .icon-bar a {float: none; font-size: 10px;}
+  /* div.content {margin-left: 0;} */
+}
 
-/* READ More */
+
+/* READ More *************************/
 .readmore-hidden {display: none;} 
 .readless {display: none;} 
 
