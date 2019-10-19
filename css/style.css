@@ -754,7 +754,7 @@ fh5co-about .profile-thumb {
   vertical-align: middle;
   height: 270px;
   background: #fff;
-  opacity: 0;
+  opacity: 0.9;
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
@@ -790,7 +790,7 @@ fh5co-about .profile-thumb {
   }
 }
 .work:hover .desc {
-  opacity: 1;
+  opacity: 0;
 }
 .work:hover .desc h3 {
   -webkit-transform: translate3d(0, 0, 0);
