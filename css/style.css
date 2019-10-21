@@ -291,6 +291,11 @@ fh5co-about .profile-thumb {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
 }
+#fh5co-features .feature-left li{
+  font-size: 16px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.7);
+}
 #fh5co-features .feature-left p:last-child {
   margin-bottom: 0;
 }
